@@ -101,7 +101,11 @@ const SendMoneyForm = ({
                   : 'border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 hover:border-slate-200'
               }`}
             >
-              <span className="text-2xl">{p.icon}</span>
+              {p.icon.startsWith('/images/') ? (
+                <img src={p.icon} alt={p.shortName} className="w-8 h-8 rounded-lg object-cover" />
+              ) : (
+                <span className="text-2xl">{p.icon}</span>
+              )}
               <p className="font-black text-sm mt-2">{p.shortName}</p>
             </motion.button>
           ))}
