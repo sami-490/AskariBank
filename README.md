@@ -26,7 +26,7 @@ Installation
 Clone the repository:
 
 Bash
-git clone https://github.com/yourusername/AskariBank.git
+git clone https://github.com/sami-490/AskariBank.git
 Install dependencies:
 
 Bash
