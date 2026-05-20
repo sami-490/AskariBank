@@ -20,6 +20,24 @@ AskariBank (Root)
 
 ---
 
+## 📸 Web Portal & Dashboard Screenshots
+
+Here are some visual highlights of the active banking dashboard, analytics, and portals included in this repository:
+
+<p align="center">
+  <img src="screenshots/screenshot-1.png" width="45%" alt="Dashboard Overview" />
+  <img src="screenshots/screenshot-2.png" width="45%" alt="Transactions & Ledger" />
+</p>
+<p align="center">
+  <img src="screenshots/screenshot-3.png" width="45%" alt="Secure Transfer Interface" />
+  <img src="screenshots/screenshot-4.png" width="45%" alt="Card Issuance & Control" />
+</p>
+<p align="center">
+  <img src="screenshots/screenshot-5.png" width="90%" alt="Admin Support & Control Desk" />
+</p>
+
+---
+
 ## 🛠️ Components & Tech Stacks
 
 ### 1. 📂 `frontend` (Vue 3 / Quasar Client Portal)
