@@ -1,0 +1,218 @@
+{
+  "verifications": [
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "97966f8445fb87c26e3e87d4c9d601ee",
+      "action": "verified",
+      "status": "success",
+      "createdAt": "2026-05-17T14:59:55.180Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "97966f8445fb87c26e3e87d4c9d601ee",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 4997,
+      "status": "pending",
+      "createdAt": "2026-05-17T14:59:53.384Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "8122d03edacad83f5802356169271ee9",
+      "action": "verified",
+      "status": "success",
+      "createdAt": "2026-05-17T14:59:20.045Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "8122d03edacad83f5802356169271ee9",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 400,
+      "status": "pending",
+      "createdAt": "2026-05-17T14:59:18.248Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "19bb8d4ee41ad123dcd228e5a8313c03",
+      "action": "verified",
+      "status": "success",
+      "createdAt": "2026-05-17T14:58:12.791Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "19bb8d4ee41ad123dcd228e5a8313c03",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 1000,
+      "status": "pending",
+      "createdAt": "2026-05-17T14:58:11.013Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "ac35f7406bcfc3077ca520c80ba7b1a6",
+      "action": "verified",
+      "status": "success",
+      "createdAt": "2026-05-17T14:55:48.760Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "ac35f7406bcfc3077ca520c80ba7b1a6",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 666,
+      "status": "pending",
+      "createdAt": "2026-05-17T14:55:46.969Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "06e0cda499cd498c7230f1d9936b11c5",
+      "action": "verified",
+      "status": "success",
+      "createdAt": "2026-05-17T14:55:36.532Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "06e0cda499cd498c7230f1d9936b11c5",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 6666,
+      "status": "pending",
+      "createdAt": "2026-05-17T14:55:34.770Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "987518d960390b96ad392f55e1bb5d49",
+      "action": "verified",
+      "status": "success",
+      "createdAt": "2026-05-17T14:55:17.569Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "987518d960390b96ad392f55e1bb5d49",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 2777,
+      "status": "pending",
+      "createdAt": "2026-05-17T14:55:15.755Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "e625103b2dd0ca5ce445c571e9bfd451",
+      "action": "verified",
+      "status": "success",
+      "createdAt": "2026-05-17T14:53:31.740Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "e625103b2dd0ca5ce445c571e9bfd451",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 500,
+      "status": "pending",
+      "createdAt": "2026-05-17T14:53:29.949Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "beb4ee40ab3478ec87bc8cf810e74d83",
+      "action": "verified",
+      "status": "success",
+      "createdAt": "2026-05-17T14:52:22.292Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "beb4ee40ab3478ec87bc8cf810e74d83",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 500,
+      "status": "pending",
+      "createdAt": "2026-05-17T14:52:20.472Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "5d669fc76cab1e6855a68133e844d3a3",
+      "action": "verified",
+      "status": "success",
+      "createdAt": "2026-05-17T14:48:41.244Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "5d669fc76cab1e6855a68133e844d3a3",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 1000,
+      "status": "pending",
+      "createdAt": "2026-05-17T14:47:44.840Z"
+    },
+    {
+      "userId": "acbb098b838f608518019d81",
+      "sessionId": "0881b48dce4082ec1fc1967b0e4c2236",
+      "action": "generated",
+      "platform": "domestic",
+      "amount": 500,
+      "status": "pending",
+      "createdAt": "2026-05-17T14:45:32.214Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "3f09cea35258e90c3ebfb8eea6b49e34",
+      "action": "generated",
+      "platform": "easypaisa",
+      "amount": 1000,
+      "status": "pending",
+      "createdAt": "2026-05-17T13:34:43.644Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "aa95dd78e4e219014f525095e39bb4c3",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 1000,
+      "status": "pending",
+      "createdAt": "2026-05-17T13:34:18.826Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "2dfc16b58b2bf37e9658ac7ebee7e978",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 1000,
+      "status": "pending",
+      "createdAt": "2026-05-17T13:32:46.320Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "551cec459f3a6a508c808bca5c3b9bed",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 1000,
+      "status": "pending",
+      "createdAt": "2026-05-17T13:32:25.857Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "31133278928ae0f4568c50691eaa7725",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 1000,
+      "status": "pending",
+      "createdAt": "2026-05-17T13:31:51.106Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "455233196d53a8442690bbfb06dd5c85",
+      "action": "expired",
+      "status": "failed",
+      "createdAt": "2026-05-17T13:31:45.509Z"
+    },
+    {
+      "userId": "2ad672460e1641803c2e6db4",
+      "sessionId": "455233196d53a8442690bbfb06dd5c85",
+      "action": "generated",
+      "platform": "askaribank",
+      "amount": 1000,
+      "status": "pending",
+      "createdAt": "2026-05-17T13:30:34.514Z"
+    }
+  ]
+}

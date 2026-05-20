@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^3.0.3",
+    "hono": "^4.12.18"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260511.1",
+    "@types/bun": "latest",
+    "wrangler": "^3.57.1"
+  }
+}
