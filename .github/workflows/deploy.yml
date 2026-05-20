@@ -1,0 +1,79 @@
+name: Deploy to Cloudflare
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-frontends:
+    name: Build & Deploy Portals
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install All Monorepo Dependencies
+        run: npm run install:all
+
+      # Build and Deploy React Portal
+      - name: Build React Dashboard (askaribank)
+        env:
+          VITE_API_URL: https://askaribank-backend.samiullahshafiq14.workers.dev/api
+        run: |
+          cd askaribank
+          npm run build
+
+      - name: Deploy React Dashboard to Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: askaribank-react
+          directory: askaribank/dist
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      # Build and Deploy Vue/Quasar Portal
+      - name: Build Vue Quasar Portal (frontend)
+        run: |
+          cd frontend
+          npm run build
+
+      - name: Deploy Vue Portal to Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: askaribank-portal
+          directory: frontend/dist/spa
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy-worker:
+    name: Deploy Backend API Worker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install All Monorepo Dependencies
+        run: npm run install:all
+
+      - name: Deploy Serverless Worker to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: backend
+          command: deploy
