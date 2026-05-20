@@ -1,43 +1,85 @@
-A secure, intuitive banking portal designed to modernize the digital experience for Askari Bank customers. This project delivers a streamlined user experience, featuring robust authentication, a centralized dashboard for account management, and is built to rigorous financial-grade specifications.
+# Askari Bank Digital Portal — Monorepo
 
-Key Features
-Secure Authentication & Session Management: Implements robust, industry-standard sign-up and login workflows to ensure customer data security.
+Welcome to the official repository for the modern Askari Bank Digital Portal. This project is structured as a professional, unified monorepo containing multiple state-of-the-art applications and services that collaborate to deliver a secure, high-performance, and responsive banking experience.
 
-Centralized User Dashboard: Provides a clean, intuitive interface designed for efficient banking navigation, allowing users to monitor accounts and access core services with ease.
+---
 
-Banking-Grade Functional Design: Developed by rigorously mapping user requirements to specific banking-grade feature specifications, ensuring the platform meets the demands of a professional financial environment.
+## 📂 Monorepo Architecture & Directory Layout
 
-Responsive Frontend Architecture: Built using a modular Vue 3 and Quasar framework, ensuring a consistent and responsive user experience across desktop and mobile devices.
+To maintain professional standards and a clean separation of concerns, the repository is organized into three major independent modules:
 
-High-Performance State & Build Management: Utilizes Pinia for scalable state management and Vite for optimized build performance.
+```
+AskariBank (Root)
+├── 📂 frontend/          # Vue 3 & Quasar Client Web Portal
+├── 📂 askaribank/        # React & Express full-stack banking app (React, Vite, Express, MongoDB)
+├── 📂 backend/           # Serverless Edge API (Cloudflare Workers & D1 Database)
+├── 📄 pnpm-workspace.yaml# Monorepo Workspace configuration
+├── 📄 .gitignore         # Clean, secret-protecting gitignore
+└── 📄 README.md          # Global documentation (This file)
+```
 
-Tech Stack
-Frontend: TypeScript, Vue 3, Quasar Framework, and Pinia.
+---
 
-Tooling: Vite, ESLint, and Prettier.
+## 🛠️ Components & Tech Stacks
 
-Getting Started
-Follow these steps to set up the project locally:
+### 1. 📂 `frontend` (Vue 3 / Quasar Client Portal)
+A secure, responsive, and elegant client portal designed to deliver an exceptional digital banking experience.
+* **Languages & Core**: `TypeScript` (100%), `Vue 3`, `HTML5`, `SCSS`
+* **Framework**: `Quasar Framework` (v2) for material design components and cross-platform responsive grids.
+* **State Management**: `Pinia` (for reactive, scalable store logic)
+* **Build System**: `Vite`
+* **Development Commands** (inside `frontend/`):
+  ```bash
+  cd frontend
+  npm install
+  npm run dev      # Launch Quasar development server
+  npm run build    # Compile optimized production assets
+  ```
 
-Prerequisites
-Ensure you have Node.js installed (supported versions: ^28, ^26, ^24, or ^22.12).
+### 2. 📂 `askaribank` (React & Express Full-Stack Application)
+A comprehensive, interactive banking dashboard with high-fidelity workflows, graphs, and transaction management.
+* **Frontend**: `TypeScript`, `React` (v18), `Vite`, `Tailwind CSS` for rich custom layouts and dashboards.
+* **Backend (`askaribank/backend`)**: `Node.js`, `Express`, `MongoDB` (using `Mongoose` schemas).
+* **Integrations**: Twilio SMS APIs for OTP delivery, nodemailer for digital receipt emails, and PDF generation.
+* **Development Commands** (inside `askaribank/`):
+  ```bash
+  cd askaribank
+  npm install
+  npm run dev      # Start React client
+  # To run the express server:
+  cd backend && npm install && npm start
+  ```
 
-Installation
-Clone the repository:
+### 3. 📂 `backend` (Cloudflare Workers Serverless Edge API)
+An ultra-fast serverless API deployed globally at the edge to support low-latency operations and database actions.
+* **Languages & Core**: `TypeScript` (100%), `ESModules`
+* **Framework**: `Cloudflare Workers` with `wrangler` CLI.
+* **Database**: `Cloudflare D1` (Serverless SQL Database)
+* **Development Commands** (inside `backend/`):
+  ```bash
+  cd backend
+  npm install
+  npx wrangler dev # Start Workers development sandbox
+  ```
 
-Bash
-git clone https://github.com/sami-490/AskariBank.git
-Install dependencies:
+---
 
-Bash
-npm install
-Development
-Start the development server:
+## ⚙️ Prerequisites & Setup
 
-Bash
-quasar dev
-Build
-Build the project for production:
+Ensure you have the following installed on your machine:
+* **Node.js** (supported versions: `^28`, `^26`, `^24`, or `^22.12`)
+* **Package Manager**: `npm`, `yarn`, or `pnpm` (highly recommended for workspaces)
 
-Bash
-quasar build
+---
+
+## 🔒 Security Best Practices
+
+We implement strict security hygiene across this repository:
+* **Secrets Protection**: Environment variables (`.env`, `.env.production`, `.env.local`) are explicitly ignored globally to prevent leaking credentials (such as DB connections, Twilio tokens, and email keys).
+* **Temporary Cache Exclusions**: Build states, local Miniflare/Wrangler caches (`.wrangler`), and package locks are ignored to keep the repository extremely light and clean.
+
+---
+
+## ⚖️ License
+
+This project is licensed under the MIT License — see the [LICENSE](file:///C:/frontend/LICENSE) file for details.
